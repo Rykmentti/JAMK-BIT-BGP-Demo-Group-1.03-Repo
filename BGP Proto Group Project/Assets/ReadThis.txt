@@ -2,18 +2,27 @@ You should see this in unity editor, or in inspector, if you pulled it correctly
 
 Team Members: Ngoc Phui Lai, Essi Pirttivaara, Janne Salminen and Sami Uski.
 
-Our Proto Group 1.03 Project for BGP assignment, that we all will be working on. This file will be synchronized in GitHub repository.
+Our Proto Group 1.03 Project for BGP assignment, that we all will be working on. This project will be synchronized in GitHub repository.
 
 Basic rules should be: 
-	- Don't commit code with compiler errors (red errors) so we can run Unity on this project, with our computers without problems.
-	- Preferably, let's not touch other code than your own, without the other ones permission, so we won't have misunderstandings about anything.
+	- Don't commit code with compiler errors (red errors) so we can run Unity on this project with our computers without problems.
+		If you have problems with code, that has compiler errors and want others to see that code, in order for us to help/advice you. Remember to comment it out
+		Example of commenting out code -->
+		// Some Random Code (This comments out this(one) line of code. Commenting out means, unity ignores code which is commented, like code with compiler errors that prevent editor from playing a scene.)
+		/* (Starts Commenting)
+		 * Some Random Code
+		 * Some Random Code
+		 * Some Random Code
+		 */ (Stops commenting) (This comments out all the code, that is between /* and */)
+	- Preferably, let's not touch each others code, without the other ones permission, so we won't have misunderstandings or merge conflicts about anything.
 	  	If you have something about other persons work you want to discuss, add/remove, change, etc. First have a talk with the person in question, before committing any changes.
-	- Always commit, before pulling. If we have surprise merge conflicts(which shouldn't happen, since you should always discuss changes with the other persons work.) Make sure not to merge, before discussing it with person in question.
-		If we don't touch each others work without permission and we always commit before pulling, we shouldn't have that many surprise merge conflicts.
+	- Always commit, before pulling and pushing. If we have surprise merge conflicts(which shouldn't happen, since you should always discuss changes with the other persons work.) Make sure not to merge, before discussing it with person in question.
+		If we don't touch each others work without permission and we always commit before pulling, we shouldn't have that many surprise merge conflicts. 
+		If we have issues with files, like work gets deleted to due to bad merge conflict or accidents. We can restore it with Github, so don't panic ^^.
 
 We will have problems, but we will adapt and hopefully have good learning experience from this, both for GitHub and Unity.
 
 I have to ask teacher about namespace specifics. But I've read about them and there are good and bad sides to them, but in a nutshell.
-You shouldn't use namespaces in your projects, because there can be some problems in higher coding spectrum, if you use them. 
+We shouldn't use namespaces in our project, because there can be some problems in higher coding spectrum, if you use them. 
 So it means, we cannot have classes or scripts of the same name and be very careful with variables, that have the same name if they interact with each other, unless they are static or synchronized values. 
-These will cause compiler errors, conflicts and problems. I don't think we need to worry about this yet, but just a advance warning for the future once things get a bit more complicated.
+These might cause compiler errors, conflicts and problems. I don't think we need to worry about this yet, but just a advance warning for the future once things get a bit more complicated, because we will run into them.

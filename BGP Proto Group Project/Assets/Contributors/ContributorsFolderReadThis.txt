@@ -1,0 +1,4 @@
+Contributors Folder.
+
+	- We should keep our work seperate from each other, for the sake of organizing our stuff. So, you should always put your work into your own folders, instead of Main Project folder. 
+		When that work is complete. We can then start working in order to have our scripts and objects interact with each others work. That will take place in Main Project folder.
