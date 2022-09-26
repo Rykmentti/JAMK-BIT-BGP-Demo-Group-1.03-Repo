@@ -23,6 +23,6 @@ Basic rules should be:
 We will have problems, but we will adapt and hopefully have good learning experience from this, both for GitHub and Unity.
 
 I have to ask teacher about namespace specifics. But I've read about them and there are good and bad sides to them, but in a nutshell.
-We shouldn't use namespaces in our project, because there can be some problems in higher coding spectrum, if you use them. 
+We shouldn't use namespaces in our project, because there can be some problems in higher coding spectrum, if you use them. But if we have to use them, use them in small scale. I.e Only when you have to.
 So it means, we cannot have classes or scripts of the same name and be very careful with variables, that have the same name if they interact with each other, unless they are static or synchronized values. 
 These might cause compiler errors, conflicts and problems. I don't think we need to worry about this yet, but just a advance warning for the future once things get a bit more complicated, because we will run into them.
