@@ -26,7 +26,7 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            //collision.gameObject.GetComponent</*Name of the script, that is attached to player*/>()./*variable that represents health*/ -= damage; //Insert needed identifiers within */ and /* after wards remove wrappers.
+            //collision.gameObject.GetComponent</*Name of the script, that is attached to player*/>()./*variable that represents healthPoint*/ -= damage; //Insert needed identifiers within */ and /* after wards remove wrappers.
             //Destroy(gameObject); //Or just destroy the object outright.
         }
     }

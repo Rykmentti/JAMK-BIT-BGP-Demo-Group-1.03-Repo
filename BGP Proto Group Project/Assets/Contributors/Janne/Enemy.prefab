@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5642378598655890406}
   - component: {fileID: 5452136662263106725}
   - component: {fileID: 6803136393770058807}
+  - component: {fileID: -2781238393051660771}
   - component: {fileID: 6489530353622745614}
   - component: {fileID: 2172834968861985844}
   m_Layer: 0
@@ -67,8 +68,22 @@ MonoBehaviour:
   attackCircle: {fileID: 5452136662263106725}
   attackSpeed: 1
   timeSinceLastAttack: 0
-  speed: 1
+  speed: 2
   turnsRight: 1
+--- !u!114 &-2781238393051660771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302178647861596885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33282dc7c548684e9412011f836505a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 20
+  minHP: 40
 --- !u!212 &6489530353622745614
 SpriteRenderer:
   m_ObjectHideFlags: 0

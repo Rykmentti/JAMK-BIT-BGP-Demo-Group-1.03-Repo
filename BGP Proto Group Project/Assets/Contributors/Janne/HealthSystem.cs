@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-    private float health;
+    [SerializeField]
+    private float maxHP;
+    [SerializeField]
+    private float minHP;
+    private float healthPoint;
     private void Start()
     {
-        health = Random.Range(10,30);
+            healthPoint = Random.Range(minHP, maxHP);
     }
-    public void GetHit(float iDamage)
+    public void ResieveHit(float iDamage)
     {
-        health -= iDamage;
-        if (health < 0)
+        healthPoint -= iDamage;
+        if (healthPoint < 0)
         {
             Destroy(gameObject);
         }
