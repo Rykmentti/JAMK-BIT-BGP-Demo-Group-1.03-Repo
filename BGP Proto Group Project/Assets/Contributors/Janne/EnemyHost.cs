@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace AD1762
-{
 
     public class EnemyHost : MonoBehaviour
     {
@@ -28,4 +26,3 @@ namespace AD1762
             instantiatedEnemy.GetComponent<EnemyAI>().targetTransform = playerGameObject.transform;
         }
     }
-}

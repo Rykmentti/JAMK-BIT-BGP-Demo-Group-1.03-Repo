@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace AD1762
-{
     public class EnemyAI : MonoBehaviour
     {
         public Transform targetTransform;
@@ -17,7 +15,7 @@ namespace AD1762
         {
 
         }
-        private void Update()
+        private void FixedUpdate()
         {
             //cheaks that there is a player transform to actually follow
             if (targetTransform != null)
@@ -62,4 +60,3 @@ namespace AD1762
             transform.position = Vector2.MoveTowards(transform.position,targetTransform.position,speed * Time.deltaTime);
         }
     }
-}
