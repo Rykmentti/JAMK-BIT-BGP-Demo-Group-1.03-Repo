@@ -7,9 +7,15 @@ public class ShootProjectileScript : MonoBehaviour
     //Very simple script, clicking left mouse button will instantiate and turn the gameObject towards where your mouse pointer is. 
 {
     // Put these values in Unity Editor. playerCamera is the player Camera object and playerArrow is the player arrow prefab, which is in my own folder.
-    public Camera playerCamera;
-    public GameObject playerArrow;
+    [SerializeField]
+    Camera playerCamera;
+    [SerializeField]
+    GameObject playerArrow;
     // Start is called before the first frame update
+    void OnGUI()
+    {
+        GUI.Label(new Rect(10, 10, 1000, 30), "Press Left Click to Shoot!"); //Comment this out if you don't want to see text on scene.
+    }
     void Start()
     {
         
