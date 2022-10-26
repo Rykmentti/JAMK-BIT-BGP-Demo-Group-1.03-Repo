@@ -167,4 +167,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 0}
-  playerArrow: {fileID: 1629766964904370752, guid: 87130403a0d937343b8b3c41abbaec01, type: 3}
+  playerArrow: {fileID: 1629766964904370752, guid: 1e75f8bbc568f894bbcaa84c876cc89a, type: 3}
