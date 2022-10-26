@@ -35,4 +35,8 @@ public class HealthSystem : MonoBehaviour
     { 
         return healthPoint;
     }
+    public float GetMaxHealt()
+    {
+        return maxHP;
+    }
 }

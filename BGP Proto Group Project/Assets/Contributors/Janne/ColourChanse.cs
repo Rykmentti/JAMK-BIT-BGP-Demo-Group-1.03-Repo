@@ -9,12 +9,13 @@ public class ColourChanse : MonoBehaviour
     void Start()
     {
         SpriteRenderer spriteRenderer;
-        float healthAmount = GetComponent<HealthSystem>().GetHealth();
-        colorChanse = healthAmount / 100;
+        HealthSystem health = GetComponent<HealthSystem>();
+        colorChanse = health.GetHealth() / health.GetMaxHealt();
         foreach (var target in colorChanseTargets)
         {
             spriteRenderer = target.GetComponent<SpriteRenderer>();
             spriteRenderer.color = new Color( spriteRenderer.color.r + colorChanse,spriteRenderer.color.g - colorChanse / 1.2f,spriteRenderer.color.b );
+            
         }
     }
 }
