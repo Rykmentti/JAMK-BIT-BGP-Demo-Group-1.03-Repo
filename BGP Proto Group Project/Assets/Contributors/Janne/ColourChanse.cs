@@ -16,5 +16,7 @@ public class ColourChanse : MonoBehaviour
             spriteRenderer = target.GetComponent<SpriteRenderer>();
             spriteRenderer.color = new Color( spriteRenderer.color.r + colorChanse,spriteRenderer.color.g - colorChanse / 1.2f,spriteRenderer.color.b );
         }
+
+        intArray[1] = 3;
     }
 }
