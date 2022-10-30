@@ -5,21 +5,35 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour
 {
     [SerializeField]
-    private float setStartingHealth;
+    private float startingHealth;
     [SerializeField]
     private float maxHP;
     [SerializeField]
     private float minHP;
     private float healthPoint;
+    [SerializeField]
+    float colourFloat = 0.80f;
+
+    ColourChanse bodyColor;
     private void Start()
     {
-        if (setStartingHealth == 0)
+        bodyColor = gameObject.GetComponent<ColourChanse>();
+        if (startingHealth == 0)
         {
             healthPoint = Random.Range(minHP, maxHP);
+            startingHealth = healthPoint;
         }
         else
         {
-            healthPoint = setStartingHealth;
+            healthPoint = startingHealth;
+        }
+    }
+    private void Update()
+    {
+        if(healthPoint < (startingHealth * colourFloat))
+        {
+            bodyColor.ColourHalfHealth();
+            colourFloat -= 0.20f;
         }
     }
     public void ResieveHit(float iDamage)
@@ -34,5 +48,9 @@ public class HealthSystem : MonoBehaviour
     public float GetHealth()
     { 
         return healthPoint;
+    }
+    public float GetHealthMax()
+    {
+        return maxHP;
     }
 }

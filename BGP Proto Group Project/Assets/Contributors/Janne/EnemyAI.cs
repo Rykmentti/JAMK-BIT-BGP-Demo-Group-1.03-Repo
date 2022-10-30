@@ -13,10 +13,7 @@ public class EnemyAI : MonoBehaviour
     public bool turnsRight = true;
 
     private float damge = 5;
-    private void Start()
-    {
 
-    }
     private void FixedUpdate()
     {
         //cheaks that there is a player transform to actually follow

@@ -8,13 +8,28 @@ public class ColourChanse : MonoBehaviour
     public List<SpriteRenderer> colorChanseTargets;
     void Start()
     {
+        ColourStart();;
+    }
+    private void ColourStart()
+    {
         SpriteRenderer spriteRenderer;
-        float healthAmount = GetComponent<HealthSystem>().GetHealth();
-        colorChanse = healthAmount / 100;
+        HealthSystem healthAmount = GetComponent<HealthSystem>();
+        colorChanse = healthAmount.GetHealth() / healthAmount.GetHealthMax();
+        Color targetColor = new Color(colorChanseTargets[0].color.r + colorChanse, colorChanseTargets[0].color.g - colorChanse / 1.2f, colorChanseTargets[0].color.b);
         foreach (var target in colorChanseTargets)
         {
             spriteRenderer = target.GetComponent<SpriteRenderer>();
-            spriteRenderer.color = new Color( spriteRenderer.color.r + colorChanse,spriteRenderer.color.g - colorChanse / 1.2f,spriteRenderer.color.b );
+            spriteRenderer.color = targetColor;
+        }
+    }
+    public void ColourHalfHealth()
+    {
+        SpriteRenderer spriteRenderer; 
+        Color targetColor = new Color(colorChanseTargets[0].color.r - colorChanse / 4, colorChanseTargets[0].color.g - colorChanse / 4, colorChanseTargets[0].color.b - colorChanse / 4);
+        foreach (var target in colorChanseTargets)
+        {
+            spriteRenderer = target.GetComponent<SpriteRenderer>();
+            spriteRenderer.color = targetColor;
         }
     }
 }

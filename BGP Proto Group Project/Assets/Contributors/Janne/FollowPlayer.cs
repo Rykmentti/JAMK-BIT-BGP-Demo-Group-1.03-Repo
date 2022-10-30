@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    [SerializeField]
     private Transform playerLocation;
+    void Start()
+    {
+        playerLocation = transform.parent.Find("Player").transform;
+    }
     void Update()
     {
         if (playerLocation != null)
