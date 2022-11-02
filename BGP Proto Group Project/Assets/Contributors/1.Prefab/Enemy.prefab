@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setStartingHealth: 0
-  maxHP: 200
+  maxHP: 400
   minHP: 20
 --- !u!212 &6489530353622745614
 SpriteRenderer:
