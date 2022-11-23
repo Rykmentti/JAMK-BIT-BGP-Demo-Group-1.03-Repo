@@ -44,6 +44,10 @@ public class HealthSystem : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (gameObject.name == "Player")
+        {
+            //add ui interface here.
+        }
     }
     public float GetHealth()
     { 
