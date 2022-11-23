@@ -35,7 +35,7 @@ public class ShootProjectileScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void FixedUpdate() //Fixed update for hold buttons, so everything stays consistent. Fixed update, runs 50 times per second by default.
     {
         if (Input.GetKey(KeyCode.Mouse0) && shootCooldown == false && isReloading == false && currentClipSize != 0 )
         {
@@ -43,7 +43,9 @@ public class ShootProjectileScript : MonoBehaviour
             currentClipSize -= 1;
             StartCoroutine(ShootCooldown());
         }
-
+    }
+    void Update() // Single activations are better on regular updates, because we want detection be as quick and as accurate as possible.
+    {
         if (Input.GetKeyDown(KeyCode.R) && isReloading == false)
         {
             StartCoroutine(IsReloading());
