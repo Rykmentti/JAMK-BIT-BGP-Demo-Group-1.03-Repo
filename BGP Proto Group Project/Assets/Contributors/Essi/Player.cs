@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         //horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left *Sami* Disabled temporarily
         //vertical = Input.GetAxisRaw("Vertical"); // -1 is down *Sami Disabled temporarily
 
-        //Imported new control scheme, to test out if works on Essi's end.
+        //Regular Input system doesn't work on Essi for some reason, so I imported new control scheme, to test out if this works on Essi's end.
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector2.up * runSpeed * Time.deltaTime);
