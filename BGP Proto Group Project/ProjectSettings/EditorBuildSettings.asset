@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main Project/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Contributors/Essi/MainMenu.unity
+    guid: 5cdb94a02b7c52944b84b540dd21b362
   m_configObjects: {}
