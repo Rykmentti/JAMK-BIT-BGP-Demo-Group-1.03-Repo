@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     {
         // Gives a value between -1 and 1
         //horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left *Sami* Disabled temporarily
-        //vertical = Input.GetAxisRaw("Vertical"); // -1 is down *Sami Disabled temporarily
+        //vertical = Input.GetAxisRaw("Vertical"); // -1 is down *Sami* Disabled temporarily
 
         //Regular Input system doesn't work on Essi for some reason, so I imported new control scheme, to test out if this works on Essi's end.
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))

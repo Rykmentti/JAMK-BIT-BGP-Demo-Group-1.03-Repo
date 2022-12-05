@@ -19,7 +19,8 @@ public class ShootProjectileScript : MonoBehaviour
     // Start is called before the first frame update
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 1000, 30), "Press Left Click to Shoot!"); //Comment this out if you don't want to see text on scene.
+        //Comment these out if you don't want to see text on scene.
+        GUI.Label(new Rect(10, 10, 1000, 30), "Press Left Click to Shoot!"); 
         GUI.Label(new Rect(10, 30, 1000, 30), "Press R to reload, when out of ammo");
         GUI.Label(new Rect(500, 10, 200, 30), "Ammunition left : " + currentClipSize);
         if (currentClipSize == 0)
